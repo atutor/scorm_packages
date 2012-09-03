@@ -129,12 +129,13 @@ if (!$_FILES['file']['name']
 		exit;
 	}
 			
-	$package_path = AT_INCLUDE_PATH . '../sco/';
+	//$package_path = AT_INCLUDE_PATH . '../sco/';
+	$package_path = AT_CONTENT_DIR.'/sco/';
 
 	if (!is_dir($package_path)) {
 		if (!@mkdir($package_path, 0755)) {
 			require(AT_INCLUDE_PATH.'header.inc.php');
-			$msg->printErrors('PACKAGE_DIR_FAILED');
+			$msg->printErrors('PACKAGE_DIR_FAILED'.AT_CONTENT_DIR);
 			require(AT_INCLUDE_PATH.'footer.inc.php');
 			exit;
 		}

@@ -238,7 +238,7 @@ class package_handler_scorm_1_2 {
 				$result = mysql_query ($sql, $db);
 
 				$pdir = AT_INCLUDE_PATH
-				. '../sco/'
+				. '../content/sco/'
 				. $_SESSION['course_id']
 				. '/' . $pkg . '/';
 

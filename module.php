@@ -5,7 +5,7 @@ if (!isset($this) || (isset($this) && (strtolower(get_class($this)) != 'module')
 define('AT_PRIV_CONTENT', $this->getPrivilege());
 
 define('AT_PACKAGE_TYPES', 'scorm-1.2');
-define('AT_PACKAGE_URL_BASE', AT_BASE_HREF . 'sco/'); 
+define('AT_PACKAGE_URL_BASE', AT_BASE_HREF . 'content/sco/'); 
 
 
 // if this module is to be made available to students on the Home or Main Navigation
